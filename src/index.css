@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.menu ul, .social ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    
+}
+
+.menu ul li, .social ul li{
+    list-style: none;
+}
+
+.menu ul li a, .social ul li a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.video-player{
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.video button{
+    background-color: red;
+    color: lightgray;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    opacity: .5;
+    transition: 400ms;
+}
+
+.video button:hover{
+    opacity: 1;
+    transition: 400ms;
+}
+
+.new-single{
+    margin-top: 50px;
+    width: 100vw;
+    height: 400px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.new-single-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.new-single-content p{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.new-single-content p:nth-child(2){
+    font-size: 2rem;
+}
+
+.new-single img{
+    transition: 400ms;
+}
+
+.new-single img:hover{
+    transform: scale(.8);
+    transition: 400ms;
+}
+
+footer{
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+}
+
+.new-single-content ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.new-single-content ul li:hover{
+    transform: scale(1.2);
+    transition: 400ms;
+
+}
+
+.new-single-content ul li{
+    transition: 400ms;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.shows{
+    
+}
