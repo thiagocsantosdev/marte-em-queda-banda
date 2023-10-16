@@ -231,12 +231,16 @@ footer{
         text-align: center;
     }
 
+    .new-single img{
+        margin-top: -120px;
+    }
    .music-player-container iframe{
     width: 90vw;
    }
 
    .shows img{
     width: 90vw;
+       
    }
  
 
