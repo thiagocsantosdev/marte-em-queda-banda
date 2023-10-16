@@ -10,13 +10,15 @@ html{
 }
 
 header{
-    display: flex;
+    display: grid;
     justify-content: space-around;
     align-items: center;
     padding-top: 10px;
 }
 
-.menu ul, .social ul{
+
+
+.social ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -24,17 +26,45 @@ header{
     
 }
 
-.menu ul li, .social ul li{
+.social{
+    grid: 1f;
+}
+
+.logo{
+    grid: 2fr;
+}
+
+.social ul li{
     list-style: none;
 }
 
-.menu ul li a, .social ul li a{
+.social ul li a{
     text-decoration: none;
     color: lightgray;
 }
 
+.iiyoutube, .ispotify, .instagram{
+    transition: 400ms;
+}
+
+.iyoutube:hover{
+    color: red;
+    transition: 400ms;
+}
+
+.ispotify:hover{
+    color: green;
+}
+
+.iinstagram:hover{
+color: rgb(253, 0, 118);
+}
+
+
+
+
 .logo img{
-    width: 80px;
+    width: 200px;
 }
 
 .video{
@@ -104,11 +134,7 @@ header{
     transition: 400ms;
 }
 
-footer{
-    background-color: black;
-    width: 100vw;
-    height: 10vh;
-}
+
 
 .new-single-content ul{
     display: flex;
@@ -159,6 +185,15 @@ footer{
     margin-bottom: 30px;
 }
 
+.music-player-container iframe{
+    transition: 400ms;
+}
+
+.music-player-container iframe:hover{
+    transform: scale(.8);
+    transition: 400ms;
+}
+
 .shows p{
     color: black;
     font-size: 3rem;
@@ -166,4 +201,43 @@ footer{
 
 .show-encarte img{
     width: 400px;
+    margin-bottom: 40px;
 }
+
+
+footer{
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+}
+
+
+@media (max-width: 480px) {
+
+    .video{
+        width: 90w;
+        height: 360px;
+    }
+
+    .video-player {
+      width: 360px;
+      height: 260px;
+    }
+
+    .new-single{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+   .music-player-container iframe{
+    width: 90vw;
+   }
+
+   .shows img{
+    width: 90vw;
+   }
+ 
+
+  }
